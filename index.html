@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keystroke Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keystroke Tracker</h1>
+        <p class="description">
+            Start typing below and the tracker will watch your typing activity.
+        </p>
+        <textarea id="typingBox" placeholder="Start typing here..."></textarea>
+        <h2>Typing Information</h2>
+        <div class="stats">
+            <div class="box">
+                <h3>Keys Pressed</h3>
+                <p id="keysPressed">0</p>
+            </div>
+            <div class="box">
+                <h3>Backspaces</h3>
+                <p id="backspaces">0</p>
+            </div>
+            <div class="box">
+                <h3>Characters</h3>
+                <p id="characters">0</p>
+            </div>
+            <div class="box">
+                <h3>Words</h3>
+                <p id="words">0</p>
+            </div>
+        </div>
+        <h2>Typing Speed</h2>
+        <div class="speedBox">
+            <p>
+                Words per minute:
+                <span id="wpm">0</span>
+            </p>
+            <p>
+                Average time between keys:
+                <span id="averageTime">0</span> ms
+            </p>
+        </div>
+        <h2>Recent Activity</h2>
+        <div id="activity">
+            No activity yet.
+        </div>
+        <button id="resetButton">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
